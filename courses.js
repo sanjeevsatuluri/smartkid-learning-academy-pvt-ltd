@@ -1,0 +1,5 @@
+const menu = document.querySelector(".menu"), nav = document.querySelector(".navlinks"); menu.onclick = () => nav.classList.toggle("open");
+const filters = document.querySelectorAll(".filter"), cards = document.querySelectorAll(".card, .featured-card");
+filters.forEach(f => f.onclick = () => { filters.forEach(x => x.classList.remove("active")); f.classList.add("active"); const v = f.dataset.filter; cards.forEach(c => c.classList.toggle("hide", v !== "All" && c.dataset.cat !== v)); });
+document.querySelectorAll("[data-course]").forEach(b => b.onclick = () => { document.getElementById("courseSelect").value = b.dataset.course; document.getElementById("enquiry").scrollIntoView({ behavior: "smooth" }); });
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add("visible") }), { threshold: .08 }); document.querySelectorAll(".reveal").forEach(e => io.observe(e));

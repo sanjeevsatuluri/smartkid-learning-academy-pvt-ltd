@@ -1,0 +1,3 @@
+const m=document.querySelector(".menu"),n=document.querySelector(".links");m.onclick=()=>n.classList.toggle("open");
+const t=document.getElementById("type"),o=document.getElementById("olyNote");t.addEventListener("change",()=>o.classList.toggle("show",t.value==="olympiad"));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("visible")}),{threshold:.08});document.querySelectorAll(".reveal").forEach(e=>io.observe(e));

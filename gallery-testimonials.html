@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Gallery & Testimonials | SmartKid Learning Academy</title>
+    <meta name="description"
+        content="Explore SmartKid Learning Academy moments, competitions, activities and parent testimonials.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="gallery-testimonials.css">
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="container"><span>Learn • Practice • Excel</span><span>Student Learning • Professional Training •
+                    Institutional Programs</span></div>
+        </div>
+        <nav class="container"><a class="brand" href="index.html"><img src="assets/smartkid-logo.png">
+                <div><b>SMARTKID</b><span>Learning Academy Pvt. Ltd.</span><small>Multiply Your Intelligence</small>
+                </div>
+            </a><button class="menu">☰</button>
+            <!-- <div class="links"><a href="index.html">Home</a><a href="about.html">About</a><a
+                    href="courses.html">Programs</a><a href="schools.html">Schools</a><a
+                    href="smart-olympiad.html">SMART Olympiad</a><a class="active"
+                    href="gallery-testimonials.html">Gallery & Testimonials</a><a href="#contact">Contact</a></div> -->
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="courses.html">Courses</a>
+                <a href="smart-olympiad.html">SMART Olympiad</a>
+                <a href="schools.html">Schools</a>
+                <a href="alumni.html">Alumni</a>
+                <a href="gallery-testimonials.html">Testimonials</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <!-- <a class="btn outline" href="#demo">Book Free Demo</a> -->
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="reveal"><span>SMARTKID MOMENTS</span>
+                    <h1>Learning. Achieving.<br><em>Growing Together.</em></h1>
+                    <p>A glimpse into the activities, competitions, celebrations and learning experiences that make the
+                        SmartKid journey memorable.</p>
+                    <div class="actions"><a class="btn gold" href="#gallery">Explore Gallery ↓</a><a class="btn glass"
+                            href="#testimonials">Parent Stories ↓</a></div>
+                </div>
+                <div class="collage reveal">
+                    <div>🏆<b>Achievements</b></div>
+                    <div>🎓<b>Learning</b></div>
+                    <div>🎉<b>Celebrations</b></div>
+                    <div>🌟<b>Growth</b></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="section" id="gallery">
+            <div class="container">
+                <div class="heading reveal"><span>OUR GALLERY</span>
+                    <h2>Moments That Tell <em>Our Story.</em></h2>
+                    <p>Highlights from SmartKid learning activities, student achievements and competitions.</p>
+                </div>
+                <div class="gallery">
+                    <figure class="g1 reveal">
+                        <div class="photo trophy-photo"><span>🏆</span></div>
+                        <figcaption><b>Student Achievements</b><small>Celebrating effort, participation and
+                                achievement.</small></figcaption>
+                    </figure>
+                    <figure class="g2 reveal">
+                        <div class="photo graduation"><span>🎓</span></div>
+                        <figcaption><b>Learning Milestones</b><small>Recognising progress and learner
+                                development.</small></figcaption>
+                    </figure>
+                    <figure class="g3 reveal">
+                        <div class="photo competition"><span>🥇</span></div>
+                        <figcaption><b>Competitions</b><small>Building confidence through challenge and
+                                participation.</small></figcaption>
+                    </figure>
+                    <figure class="g4 reveal">
+                        <div class="photo classroom"><span>📚</span></div>
+                        <figcaption><b>Learning Activities</b><small>Joyful, engaging and skill-focused learning
+                                experiences.</small></figcaption>
+                    </figure>
+                    <figure class="g5 reveal">
+                        <div class="photo creative"><span>🎨</span></div>
+                        <figcaption><b>Creative Learning</b><small>Exploring imagination, expression and new
+                                abilities.</small></figcaption>
+                    </figure>
+                    <figure class="g6 reveal">
+                        <div class="photo technology"><span>🤖</span></div>
+                        <figcaption><b>Future Skills</b><small>Technology, coding, robotics and hands-on
+                                exploration.</small></figcaption>
+                    </figure>
+                </div>
+                <div class="existing-note reveal"><b>Existing SmartKid Gallery</b>
+                    <p>The redesigned page is ready for your original SmartKid event and activity photographs. Keep the
+                        current gallery image files in the <code>assets/gallery/</code> folder and replace these visual
+                        placeholders without changing the layout.</p>
+                </div>
+            </div>
+        </section> -->
+
+
+        <section class="section" id="gallery">
+
+            <div class="container">
+
+                <div class="heading reveal">
+                    <span>OUR GALLERY</span>
+                    <h2>SmartKid <em>Gallery</em></h2>
+                    <p>Memorable learning moments, competitions, activities, workshops and celebrations.</p>
+                </div>
+
+                <div id="galleryGrid" class="dynamic-gallery"></div>
+
+                <div class="gallery-load">
+                    <button id="loadMoreBtn" class="btn gold">
+                        Load More Images
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- <section class="testimonial-section" id="testimonials">
+            <div class="container">
+                <div class="heading light reveal"><span>WHAT PARENTS SAY</span>
+                    <h2>Stories From <em>SmartKid Families.</em></h2>
+                    <p>Existing testimonials carried forward from the current SmartKid Learning Academy website.</p>
+                </div>
+                <div class="test-grid">
+                    <blockquote class="reveal">
+                        <div class="quote">“</div>
+                        <p>SmartKid Academy has truly transformed my Son’s confidence. He loves the classes and the
+                            teachers are wonderful!</p>
+                        <footer>
+                            <div class="avatar">A</div>
+                            <div><b>Mr Ashok</b><span>Father of Master Pranav • Math course</span></div>
+                        </footer>
+                    </blockquote>
+                    <blockquote class="reveal featured">
+                        <div class="quote">“</div>
+                        <p>My Daughter’s focus and mental math skills have improved significantly. Highly recommend the
+                            Abacus course!</p>
+                        <footer>
+                            <div class="avatar">R</div>
+                            <div><b>Mr. Ramesh</b><span>Father of Varshitha & Dedepiya</span></div>
+                        </footer>
+                    </blockquote>
+                    <blockquote class="reveal">
+                        <div class="quote">“</div>
+                        <p>Excellent academy with passionate mentors. The phonics and handwriting programs are really
+                            helping my child in school.</p>
+                        <footer>
+                            <div class="avatar">S</div>
+                            <div><b>Mrs Shailaja</b><span>Mother of Sanch & Yashwanth</span></div>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section> -->
+
+
+        <section class="testimonial-section" id="testimonials">
+
+            <div class="container">
+
+                <div class="heading light reveal">
+                    <span>VIDEO TESTIMONIALS</span>
+
+                    <h2>Success <em>Stories</em></h2>
+
+                    <p>Watch SmartKid students and parents sharing their learning experience.</p>
+
+                </div>
+
+                <div id="videoGrid" class="video-grid"></div>
+
+            </div>
+
+        </section>
+        <section class="section memory">
+            <div class="container memory-grid">
+                <div class="reveal"><span class="label">MORE THAN CLASSES</span>
+                    <h2>Every Milestone <em>Matters.</em></h2>
+                    <p>SmartKid brings learning, practice, activities and opportunities together so children can build
+                        skills and confidence while creating meaningful learning memories.</p>
+                </div>
+                <div class="memory-cards reveal"><span>📖 Learning</span><span>🧠 Practice</span><span>🤝
+                        Participation</span><span>🏆 Achievement</span><span>🎨 Creativity</span><span>🚀 Growth</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container cta-box reveal">
+                <div><span>START YOUR SMARTKID JOURNEY</span>
+                    <h2>Learn • Practice • Excel</h2>
+                    <p>Explore SmartKid programs or talk to us about the right learning opportunity for your child.</p>
+                </div>
+                <div><a class="btn gold" href="courses.html">Explore Programs →</a><a class="btn glass"
+                        href="#contact">Contact SmartKid</a></div>
+            </div>
+        </section>
+    </main>
+    <footer id="contact">
+        <div class="container footer-grid">
+            <div class="fbrand"><img src="assets/smartkid-logo.png">
+                <h3>SMARTKID</h3>
+                <p>Learning Academy Pvt. Ltd.</p><small>Learn • Practice • Excel</small>
+            </div>
+            <div>
+                <h4>Explore</h4><a href="about.html">About</a><a href="courses.html">Programs</a><a
+                    href="schools.html">Schools</a><a href="gallery-testimonials.html">Gallery & Testimonials</a>
+            </div>
+            <div>
+                <h4>SMART Olympiad</h4><a href="https://aseolympiad.in/" target="_blank" rel="noopener">Dedicated
+                    Olympiad Portal ↗</a>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>4-40/15, Near Balaji Sweet House, Kismatpur, Hyderabad, Telangana 500030</p>
+                <p>+91 9182906641 / +91 40-49524296</p>
+                <p>info@smartkidlearningacademy.in</p>
+            </div>
+        </div>
+        <div class="container copy">© 2026 SmartKid Learning Academy Private Limited. All Rights Reserved.</div>
+    </footer>
+    <script src="gallery-testimonials.js"></script>
+</body>
+
+</html>
